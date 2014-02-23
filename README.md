@@ -67,6 +67,6 @@ Here are sample .<app>install files:
 
 ## How does it work?
 
-  - Check for .&lt;app&gt;install file in your home directory or in ~/.dotfiles/conf
-  - Either clone or update the github repo in ~/.dotfiles
+  - Check for .&lt;app&gt;install file in your home directory or in ~/.dotfiles-installer/conf
+  - Either clone or update the github repo in ~/.dotfiles-installer
   - Run callback functions defined in the .&lt;app&gt;install file

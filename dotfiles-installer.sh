@@ -19,13 +19,12 @@ LOCAL_CONF_DIR="${INSTALLER_HOME}/conf"
 APP=$1
 APP_INSTALL_CONFIG=".${APP}install"
 
-# echo -> https://unix.stackexchange.com/questions/65803/why-is-printf-better-than-echo
-
 function get_local_repo_dir() {
     local LOCAL_REPO_DIR_NAME=`echo $GIT_REPO | sed 's%^.*/\([^/]*\)\.git$%\1%g'`
     echo "${LOCAL_REPO_HOME_DIR}${LOCAL_REPO_DIR_NAME}"
 }
 
+# echo -> https://unix.stackexchange.com/questions/65803/why-is-printf-better-than-echo
 function echo() {
   if [ "$#" -gt 0 ]; then
      printf %s "$1"

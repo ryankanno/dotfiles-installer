@@ -22,11 +22,21 @@ something amazing.
 
 ## Running the installer
 
+### Clone the repo
+
 `./installer <app>`
 
 For example, assuming you have a .viminstall in your home directory (see below),
 
 `./installer vim`
+
+### Curl the repo
+
+`bash <(curl -s https://raw2.github.com/ryankanno/dotfiles-installer/master/dotfiles-installer.sh) <app>`
+
+For example, assuming you have a .viminstall in your home directory (see below),
+
+`bash <(curl -s https://raw2.github.com/ryankanno/dotfiles-installer/master/dotfiles-installer.sh) vim`
 
 ## Examples
 

@@ -68,5 +68,10 @@ Here are sample .<app>install files:
 ## How does it work?
 
   - Check for .&lt;app&gt;install file in your home directory or in ~/.dotfiles-installer/conf
-  - Either clone or update the github repo in ~/.dotfiles-installer
+  - Either clone or update the github repo in ~/.dotfiles-installer/repo/&lt;repo_name&gt;
   - Run callback functions defined in the .&lt;app&gt;install file
+
+## TODO
+
+  - document functions like update_symlink
+

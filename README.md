@@ -22,10 +22,11 @@ something amazing.
 
 ## Running the installer
 
-`./installer &lt;app&gt;`
+`./installer <app>`
 
-For example, assuming you have .viminstall in your home directory, ./installer
-vim will install vim.
+For example, assuming you have a .viminstall in your home directory (see below),
+
+`./installer vim`
 
 ## Examples
 
@@ -51,8 +52,7 @@ Here are sample .<app>install files:
     GIT_EXEC=/opt/local/bin/git
 
     function install () {
-        update_symlink ".vim"
-        update_symlink ".vimrc"
+        update_symlink ".tmux.conf"
     }
 
 ## How does it work?

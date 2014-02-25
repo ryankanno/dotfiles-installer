@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+GIT_REPO=<PATH_TO_YOUR_REPO_HERE>
+GIT_EXEC=<PATH_TO_GIT_EXECUTABLE_HERE>
+
+function pre_install() {
+    echo "Before installation..."
+}
+
+function install() {
+    update_symlink ".foobar"
+}
+
+function post_install() {
+    echo "After installation..."
+}

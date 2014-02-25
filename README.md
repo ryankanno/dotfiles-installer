@@ -1,7 +1,7 @@
 dotfiles-installer
 ==================
 
-Tiny bash script used to install dotfiles via symlinks.
+Tiny bash script used to install dotfiles.
 
 For every dotfile you'd like to install, you need to have a file in your home
 directory called ".&lt;app&gt;install" (e.g. .tmuxinstall, .viminstall)
@@ -24,11 +24,11 @@ something amazing.
 
 ### Clone the repo
 
-`./installer <app>`
+`./dotfiles-installer <app>`
 
 For example, assuming you have a .viminstall in your home directory (see below),
 
-`./installer vim`
+`./dotfiles-installer vim`
 
 ### Curl the repo
 
@@ -39,6 +39,8 @@ For example, assuming you have a .viminstall in your home directory (see below),
 `bash <(curl -s https://raw2.github.com/ryankanno/dotfiles-installer/master/dotfiles-installer.sh) vim`
 
 ## Examples
+
+Please check out the example install file as well.
 
 Here are sample .<app>install files:
 
@@ -67,7 +69,7 @@ Here are sample .<app>install files:
 
 ## How does it work?
 
-  - Check for .&lt;app&gt;install file in your home directory or in ~/.dotfiles-installer/conf
+  - Checks for .&lt;app&gt;install file in your home directory or in ~/.dotfiles-installer/conf
   - Either clone or update the github repo in ~/.dotfiles-installer/repo/&lt;repo_name&gt;
   - Run callback functions defined in the .&lt;app&gt;install file
 

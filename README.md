@@ -51,7 +51,7 @@ Here are sample .<app>install files:
     GIT_REPO=git://github.com/ryankanno/vim-config.git
     GIT_EXEC=/opt/local/bin/git
 
-    function install () {
+    function install() {
         update_symlink ".vim"
         update_symlink ".vimrc"
     }
@@ -63,7 +63,7 @@ Here are sample .<app>install files:
     GIT_REPO=git://github.com/ryankanno/dotfiles.git
     GIT_EXEC=/opt/local/bin/git
 
-    function install () {
+    function install() {
         update_symlink ".tmux.conf"
     }
 

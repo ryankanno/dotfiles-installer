@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-GIT_REPO=<PATH_TO_YOUR_REPO_HERE>
-GIT_EXEC=<PATH_TO_GIT_EXECUTABLE_HERE>
+GIT_REPO="<PATH_TO_YOUR_REPO_HERE>"
+GIT_EXEC="<PATH_TO_GIT_EXECUTABLE_HERE>"
 
 function pre_install() {
     echo "Before installation..."
